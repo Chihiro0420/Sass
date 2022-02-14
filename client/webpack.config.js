@@ -1,4 +1,7 @@
 const path = require('path')
+
+// our boiler template is ready for compiling "scss" to "css"!
+// you need this for Sass
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
@@ -7,6 +10,8 @@ module.exports = {
     path: path.join(__dirname, '..', 'server', 'public'),
     filename: 'bundle.js'
   },
+
+  // <<<< same as bundle.js, this part is compling to css >>>
   mode: 'development',
   plugins: [
     new MiniCssExtractPlugin({

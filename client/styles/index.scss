@@ -3,4 +3,88 @@
 html, 
 body {
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  list-style: none;
 }
+li{
+  list-style: none;
+}
+
+
+// CSS ====================
+
+.list {
+  margin: 2rem;
+  padding: 5rem;
+  background-color: pink;
+}
+
+.list-item{
+     color: white;
+     font-size: 2rem;
+}
+
+.banana {
+    color: red;
+    font-size: 3rem;
+    display: block;
+}
+
+.banana:hover{
+  color: blue;
+}
+
+@media (max-width: 768px) { 
+    .banana {
+      font-size: 10rem;
+      color: blue;
+    }
+   .banana:hover {
+    color: red;
+  }
+}
+
+//  SCSS ==============================
+//  1. variable
+//  2. nest (media, hover)
+// $primary
+// $secondary
+//  ===================================
+
+// $white: white;
+// $pink : pink;
+// $red : red;
+// $blue: blue;
+// $orange: orange;
+
+// .list{
+//   margin: 2rem;
+//   padding: 5rem;
+//   background-color: $pink;
+  
+//   &-item{
+//     color: $white;
+    
+//     font-size: 2rem;
+//   }
+// }
+
+// .banana {
+//       color: $red;
+//     font-size: 3rem;
+//     display: block;
+    
+//     &:hover{
+//        color: $orange;
+//     }
+    
+//     @media(max-width: 768px){
+//       font-size: 10rem;
+//       color: $blue;
+      
+//       &:hover{
+//       color: $red;
+//       }
+        
+//     }
+// }

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import { fetchFruits } from '../actions'
 
-function App () {
+function App() {
   const fruits = useSelector(state => state.fruits)
   const dispatch = useDispatch()
   useEffect(() => {
@@ -12,14 +12,16 @@ function App () {
 
   return (
     <>
-      <div className='app'>
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
-        <ul>
-          {fruits.map(fruit => (
-            <li key={fruit}>{fruit}</li>
-          ))}
-        </ul>
-      </div>
+      <h1>WELCOME TO SAAS!!!!</h1>
+      <ul className="list">
+        <li className="list-item">One</li>
+        <li className="list-item">Two</li>
+        <li className="list-item">Three</li>
+        <li className="list-item">Four</li>
+        <li className="list-item">Five</li>
+      </ul>
+
+      <a href="/" className="banana">Heyyy!😎</a>
     </>
   )
 }
